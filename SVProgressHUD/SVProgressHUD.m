@@ -929,7 +929,7 @@ static const CGFloat SVProgressHUDDefaultAnimationDuration = 0.15;
             
             // An image will dismissed automatically. Therefore we start a timer
             // which then will call dismiss after the predefined duration
-            strongSelf.fadeOutTimer = [NSTimer timerWithTimeInterval:duration target:strongSelf selector:@selector(dismiss) userInfo:nil repeats:NO];
+            strongSelf.fadeOutTimer = [NSTimer timerWithTimeInterval:1 target:strongSelf selector:@selector(dismiss) userInfo:nil repeats:NO];
             [[NSRunLoop mainRunLoop] addTimer:strongSelf.fadeOutTimer forMode:NSRunLoopCommonModes];
         }
     }];
@@ -1434,4 +1434,3 @@ static const CGFloat SVProgressHUDDefaultAnimationDuration = 0.15;
 }
 
 @end
-
